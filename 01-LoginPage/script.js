@@ -2,6 +2,18 @@
 // the h2 should add in the word create (Create Name)
 // Make a random password generator
 
+function passwordGenerator(){
+    let passwordLenth = 24
+    
+    //
+    const uppercaseChars = "QWERTYUIOPASDFGHJKLZXCVBNM";
+    const lowercaseChars = "qwertyuiopasdfghjklzxcvbnm";
+    const numbers = "01234567890";
+    const specialChars = "-/:;()$&@.,?![]{}#%^*+_\|~<>€£¥";
+    
+    
+};
+
 document.getElementById("sign-btn").onclick = function(){
     //login page => SignUp page
     document.getElementById("page").textContent = "SignUp Page";
