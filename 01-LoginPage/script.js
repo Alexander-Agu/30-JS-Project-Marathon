@@ -23,8 +23,13 @@ function passwordGenerator() {
     return password;
 }
 
+    //Get the values of the Username, Number, and Password and save in local storage
+    let username = document.getElementById("username").value;
+    let userNumber = document.getElementById("user-number").value;
+     //declare passKey outside the event listener to keep its value
+    let passKey = "";
 
-
+let infoList = document.getElementsByClassName("info");
 
 document.getElementById("sign-btn").onclick = function(){
     //login page => SignUp page
@@ -36,17 +41,15 @@ document.getElementById("sign-btn").onclick = function(){
     document.getElementById("password").textContent = "Create Password";
 
     //Login btn => SignUp btn
-    document.getElementById("login-btn"). textContent = "SignUp";
+    document.getElementById("login-btn").textContent = "SignUp";
     document.getElementById("question").textContent = "";
 
-    //An eventListner that will allow me to give the user to be generated a random password
 
+
+    //An event listener that will allow me to give the user to be generated a random password
     let question = document.getElementById("pass-word");
 
-    //had a little bug i couldnt make my password show in the input
-    //reason is because the passkey variable was in the eventListnert
-    // declare passKey outside the event listener to keep its value
-    let passKey = ""; 
+    //had a little bug I couldn't make my password show in the input
 
     question.addEventListener("click", (e) => {
         if (passKey === "") {
@@ -56,8 +59,46 @@ document.getElementById("sign-btn").onclick = function(){
             if (answer === "YES") {
                 passKey = passwordGenerator();
                 document.getElementById("pass-word").value = passKey;
-            }
-        }
+                saveData();
+
+                //the bug was asking the user for a new password every time they clicked on the password input
+                if(passKey === passKey){
+                    question.addEventListener("click", (e)=> {
+                        passKey = passKey;
+                        saveData();
+                    });
+                };
+            };
+        };
+
+        const signInBTN = document.getElementById("login-btn");
+        // when i click on the signInBTN ill be able to save my input values and use them later to log in
+        signInBTN.addEventListener('click', (e)=>{
+            passKey.value;
+            userNumber.value;
+            username.value;
+            saveData();
+            document.location = "abour.html";
+
+            console.log(passKey)
+            console.log(userNumber)
+            console.log(username)
+
+        })
     });
-    
 };
+
+// Login
+// I want to log in with my sign-in input data 
+// if I get one thing wrong, I won't allow access
+document.getElementById("login-btn").onclick = function(username, userNumber){
+    userNumber.value;
+    username.value;
+    if(username && userNumber){
+        document.location = "abour.html";
+    }
+}
+
+function saveData(){
+    localStorage.setItem("data", infoList.innerHTML);
+}
