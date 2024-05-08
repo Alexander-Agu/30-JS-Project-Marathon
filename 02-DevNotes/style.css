@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* >> GENERAL STYLING */
+
+/* >> CONTAINER */
+.container  {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* >> DEV CONTAINER */
+.devnotes-container {
+    height: 50vh;
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* >> DETAILS */
+
+/* >> ADD DISPLAY */
+
+/* >> NOTE DISPLAY */

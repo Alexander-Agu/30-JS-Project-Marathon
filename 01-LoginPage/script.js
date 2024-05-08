@@ -68,9 +68,7 @@ document.getElementById("sign-btn").onclick = function(){
                 passKey = document.getElementById("pass-word").value;
                 saveData();
             }
-        }else   [
-            alert
-        ]
+        }
 
 
         
@@ -89,11 +87,6 @@ document.getElementById("sign-btn").onclick = function(){
     });
 
 };
-
-console.log(passKey)
-console.log(userNumber)
-console.log(username)
-
 // Login
 // I want to log in with my sign-in input data 
 // if I get one thing wrong, I won't allow access
