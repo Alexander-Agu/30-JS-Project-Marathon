@@ -23,107 +23,77 @@ function passwordGenerator() {
     return password;
 }
 
-    //Get the values of the Username, Number, and Password and save in local storage
-    let username = document.getElementById("username").value;
-    let userNumber = document.getElementById("user-number").value;
-     //declare passKey outside the event listener to keep its value
-    let passKey = "";
+//Get the values of the Username, Number, and Password and save in local storage
+let username = "";
+let userNumber = "";
+//declare passKey outside the event listener to keep its value
+let passKey = "";
 
 let infoList = document.getElementsByClassName("info");
+function saveData(){
+    localStorage.setItem("data", infoList.innerHTML);
+}
 
 document.getElementById("sign-btn").onclick = function(){
     //login page => SignUp page
     document.getElementById("page").textContent = "SignUp Page";
-
     //Sign Up information fill in change
     document.getElementById("username").textContent = "Create Username";
     document.getElementById("number").textContent = "Fill in Number";
     document.getElementById("password").textContent = "Create Password";
-
     //Login btn => SignUp btn
     document.getElementById("login-btn").textContent = "SignUp";
     document.getElementById("question").textContent = "";
 
-<<<<<<< HEAD
 
-
-=======
-    //Get the values of the Username, Number, and Password and save in local storage
-    let username = document.getElementById("username").value;
-    let userNumber = document.getElementById("user-number").value;
-
->>>>>>> b3b207dae974c7233426fe853236242ca492261e
     //An event listener that will allow me to give the user to be generated a random password
     let question = document.getElementById("pass-word");
-
-    //had a little bug I couldn't make my password show in the input
-<<<<<<< HEAD
-=======
-    //declare passKey outside the event listener to keep its value
-    let passKey = 
->>>>>>> b3b207dae974c7233426fe853236242ca492261e
+    let questionAsked = 1;
 
     question.addEventListener("click", (e) => {
-        if (passKey === "") {
+        if (passKey === "" && questionAsked === 1) {
+            //increment questionAsked by 1 to keep user from getting the pop-up massage multiple times
+            questionAsked++;
+
             let answer = window.prompt("Do you want to generate a random password? Yes or No");
             answer = answer ? answer.toUpperCase() : "";
     
-            if (answer === "YES") {
+            if(answer === "YES") {
                 passKey = passwordGenerator();
                 document.getElementById("pass-word").value = passKey;
                 saveData();
+            }
+            else if( answer === "NO"){
+                //increment questionAsked by 1 to keep user from getting the pop-up massage multiple times
+                passKey = document.getElementById("pass-word").value;
+                saveData();
+            }
+        }else   [
+            alert
+        ]
 
-                //the bug was asking the user for a new password every time they clicked on the password input
-                if(passKey === passKey){
-                    question.addEventListener("click", (e)=> {
-                        passKey = passKey;
-                        saveData();
-                    });
-                };
-            };
-        };
-<<<<<<< HEAD
 
+        
         const signInBTN = document.getElementById("login-btn");
         // when i click on the signInBTN ill be able to save my input values and use them later to log in
         signInBTN.addEventListener('click', (e)=>{
-            passKey.value;
-            userNumber.value;
-            username.value;
-            saveData();
+            passKey = document.getElementById("pass-word").value;
+            username = document.getElementById("username").value;
+            userNumber = document.getElementById("user-number").value;
             document.location = "abour.html";
-
             console.log(passKey)
             console.log(userNumber)
             console.log(username)
 
-        })
+        });
     });
-=======
-    });
-    
-    passKey = document.getElementById("pass-word").value;
-    saveData();
->>>>>>> b3b207dae974c7233426fe853236242ca492261e
+
 };
+
+console.log(passKey)
+console.log(userNumber)
+console.log(username)
 
 // Login
 // I want to log in with my sign-in input data 
 // if I get one thing wrong, I won't allow access
-<<<<<<< HEAD
-document.getElementById("login-btn").onclick = function(username, userNumber){
-    userNumber.value;
-    username.value;
-    if(username && userNumber){
-        document.location = "abour.html";
-=======
-document.getElementById("login-btn").onclick = function(username, userNumber, passKey){
-    if(username && userNumber && passKey){
-        document.location = "abour.html"
->>>>>>> b3b207dae974c7233426fe853236242ca492261e
-    }
-}
-
-function saveData(){
-    localStorage.setItem("data", infoList.innerHTML);
-}
