@@ -44,12 +44,24 @@ document.getElementById("sign-btn").onclick = function(){
     document.getElementById("login-btn").textContent = "SignUp";
     document.getElementById("question").textContent = "";
 
+<<<<<<< HEAD
 
 
+=======
+    //Get the values of the Username, Number, and Password and save in local storage
+    let username = document.getElementById("username").value;
+    let userNumber = document.getElementById("user-number").value;
+
+>>>>>>> b3b207dae974c7233426fe853236242ca492261e
     //An event listener that will allow me to give the user to be generated a random password
     let question = document.getElementById("pass-word");
 
     //had a little bug I couldn't make my password show in the input
+<<<<<<< HEAD
+=======
+    //declare passKey outside the event listener to keep its value
+    let passKey = 
+>>>>>>> b3b207dae974c7233426fe853236242ca492261e
 
     question.addEventListener("click", (e) => {
         if (passKey === "") {
@@ -70,6 +82,7 @@ document.getElementById("sign-btn").onclick = function(){
                 };
             };
         };
+<<<<<<< HEAD
 
         const signInBTN = document.getElementById("login-btn");
         // when i click on the signInBTN ill be able to save my input values and use them later to log in
@@ -86,16 +99,28 @@ document.getElementById("sign-btn").onclick = function(){
 
         })
     });
+=======
+    });
+    
+    passKey = document.getElementById("pass-word").value;
+    saveData();
+>>>>>>> b3b207dae974c7233426fe853236242ca492261e
 };
 
 // Login
 // I want to log in with my sign-in input data 
 // if I get one thing wrong, I won't allow access
+<<<<<<< HEAD
 document.getElementById("login-btn").onclick = function(username, userNumber){
     userNumber.value;
     username.value;
     if(username && userNumber){
         document.location = "abour.html";
+=======
+document.getElementById("login-btn").onclick = function(username, userNumber, passKey){
+    if(username && userNumber && passKey){
+        document.location = "abour.html"
+>>>>>>> b3b207dae974c7233426fe853236242ca492261e
     }
 }
 
