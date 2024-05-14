@@ -10,12 +10,10 @@
 
 /* >> CONTAINER */
 .container  {
-    width: 100%;
+    width: 50%;
     height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin: auto;
 }
 
 /* >> DEV CONTAINER */
@@ -94,3 +92,28 @@
 }
 
 /* >> NOTE DISPLAY */
+.note-display   {
+    border-left: 2px solid greenyellow;
+    border-right: 2px solid greenyellow;
+    border-top: 2px solid greenyellow;
+    height: 100%;
+    margin: 5px;
+}
+
+.note-box   {
+    border-left: 2px solid greenyellow;
+    border-right: 2px solid greenyellow;
+    border-top: 2px solid greenyellow;
+    height: 100%;
+    margin: 5px;
+}
+
+#display    {
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border-bottom: 2px solid greenyellow;
+}
