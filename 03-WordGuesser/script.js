@@ -38,7 +38,6 @@ function revealLetters() {
         { id: "btn-6", letter: "F" }
     ];
 
-    // Attach click handlers to buttons
     buttons.forEach(button => {
         handleButtonClick(button.id, button.letter);
     });

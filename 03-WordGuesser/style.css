@@ -82,6 +82,12 @@
         border: none;
         outline: none;
         background: rgb(255, 99, 99);
+        font-size: 24px;
+        font-weight: bolder;
+        padding: 5px;
+    }
+    input:visited   {
+        background: rgb(255, 99, 99);
     }
 
     #submit {
