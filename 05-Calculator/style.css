@@ -1,0 +1,99 @@
+/* >> Reset */
+    *,
+    *::before,
+    *::after    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+/*  */
+
+/* >> GENERAL STYLES */
+
+/* >> CONTAINER */
+    .container  {
+        width: 100%;
+        height: 100vh;
+        background: black;
+
+        display: grid;
+        place-content: center;
+    }
+/* > Calculator */
+    .calculator {
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #display    {
+        border: none;
+        border-radius: 25px;
+        outline: none;
+        background: grey;
+        height: 100px;
+        text-align: center;
+        font-weight: bolder;
+    }
+/* > Future Display */
+    .future-display {
+
+
+        display: flex;
+    }
+
+    #prediction {
+        border: none;
+        border-radius: 25px 0px 0px 25px;
+        outline: none;
+        background: grey;
+        height: 50px;
+        width: 80%;
+        padding: 16px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    #submit {
+        width: 20%;
+        border: none;
+        color: white;
+        background-color: black;
+        padding: 16px;
+        border-radius: 0px 25px 25px 0px;
+    }
+/* > Calculator Buttons */
+    .calc-btns  {
+        padding: 20px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .calc-numbers   {
+        width: 70px;
+        height: 70px;
+        margin: 16px;
+        border: none;
+        border-radius: 50%;
+        color: black;
+        font-size: 22px;
+        background: white;
+        transition: 200ms;
+    }
+    .calc-numbers:hover {
+        background-color: rgb(207, 199, 199);
+        transition: 200ms;
+    }
+
+    .calc-numbers:nth-child(4),
+    .calc-numbers:nth-child(8),
+    .calc-numbers:nth-child(12),
+    .calc-numbers:nth-child(15),
+    .calc-numbers:nth-child(16) {
+        background-color: orange;
+        color: white;
+        font-size: 40px;
+    }
