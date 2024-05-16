@@ -21,22 +21,22 @@
             <br>
     
             <div class="calc-btns">
-                <button id="1" class="calc-numbers">1</button>
-                <button id="1" class="calc-numbers">2</button>
-                <button id="1" class="calc-numbers">3</button>
-                <button id="1" class="calc-numbers">*</button>
-                <button id="1" class="calc-numbers">4</button>
-                <button id="1" class="calc-numbers">5</button>
-                <button id="1" class="calc-numbers">6</button>
-                <button id="1" class="calc-numbers">/</button>
-                <button id="1" class="calc-numbers">7</button>
-                <button id="1" class="calc-numbers">8</button>
-                <button id="1" class="calc-numbers">9</button>
-                <button id="1" class="calc-numbers">+</button>
-                <button id="1" class="calc-numbers">0</button>
-                <button id="1" class="calc-numbers">00</button>
-                <button id="1" class="calc-numbers">=</button>
-                <button id="1" class="calc-numbers">-</button>
+                <button id="1" class="calc-numbers" onclick="appendToDisplay('1')">1</button>
+                <button id="2" class="calc-numbers" onclick="appendToDisplay('2')">2</button>
+                <button id="3" class="calc-numbers" onclick="appendToDisplay('3')">3</button>
+                <button id="multiply" class="calc-numbers" onclick="appendToDisplay('*')">*</button>
+                <button id="4" class="calc-numbers" onclick="appendToDisplay('4')">4</button>
+                <button id="5" class="calc-numbers" onclick="appendToDisplay('5')">5</button>
+                <button id="6" class="calc-numbers" onclick="appendToDisplay('6')">6</button>
+                <button id="division" class="calc-numbers" onclick="appendToDisplay('/')">/</button>
+                <button id="7" class="calc-numbers" onclick="appendToDisplay('7')">7</button>
+                <button id="8" class="calc-numbers" onclick="appendToDisplay('8')">8</button>
+                <button id="9" class="calc-numbers" onclick="appendToDisplay('9')">9</button>
+                <button id="addition" class="calc-numbers" onclick="appendToDisplay('+')">+</button>
+                <button id="0" class="calc-numbers" onclick="appendToDisplay('0')">0</button>
+                <button id="00" class="calc-numbers" onclick="clearDisplay()">AC</button>
+                <button id="equal" class="calc-numbers" onclick="calculate()">=</button>
+                <button id="subtraction" class="calc-numbers" onclick="appendToDisplay('-')">-</button>
             </div>
         </div>
     </div>

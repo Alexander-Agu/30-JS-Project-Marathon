@@ -91,6 +91,7 @@
     .calc-numbers:nth-child(4),
     .calc-numbers:nth-child(8),
     .calc-numbers:nth-child(12),
+    .calc-numbers:nth-child(14),
     .calc-numbers:nth-child(15),
     .calc-numbers:nth-child(16) {
         background-color: orange;
