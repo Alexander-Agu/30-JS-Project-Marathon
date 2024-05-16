@@ -1,5 +1,6 @@
 const display = document.getElementById("display");
 
+// Lets the selected number display on the input box
 function appendToDisplay(input){
     display.value += input;
 }
@@ -15,8 +16,4 @@ function calculate(){
     catch{
         display.value = "error";
     }
-}
-
-function eraiseDisplay(){
-    display.value -= "1";
 }
