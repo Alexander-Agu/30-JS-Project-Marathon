@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="calculator">
-            <div class="future-display">
-                <input type="text" id="prediction">
-                <button id="submit">Submit</button>
-            </div>
-    
-            <br>
-    
-            <input id="display" readonly>
-    
-            <br>
-    
-            <div class="calc-btns">
-                <button id="1" class="calc-numbers" onclick="appendToDisplay('1')">1</button>
-                <button id="2" class="calc-numbers" onclick="appendToDisplay('2')">2</button>
-                <button id="3" class="calc-numbers" onclick="appendToDisplay('3')">3</button>
-                <button id="multiply" class="calc-numbers" onclick="appendToDisplay('*')">*</button>
-                <button id="4" class="calc-numbers" onclick="appendToDisplay('4')">4</button>
-                <button id="5" class="calc-numbers" onclick="appendToDisplay('5')">5</button>
-                <button id="6" class="calc-numbers" onclick="appendToDisplay('6')">6</button>
-                <button id="division" class="calc-numbers" onclick="appendToDisplay('/')">/</button>
-                <button id="7" class="calc-numbers" onclick="appendToDisplay('7')">7</button>
-                <button id="8" class="calc-numbers" onclick="appendToDisplay('8')">8</button>
-                <button id="9" class="calc-numbers" onclick="appendToDisplay('9')">9</button>
-                <button id="addition" class="calc-numbers" onclick="appendToDisplay('+')">+</button>
-                <button id="0" class="calc-numbers" onclick="appendToDisplay('0')">0</button>
-                <button id="00" class="calc-numbers" onclick="clearDisplay()">AC</button>
-                <button id="equal" class="calc-numbers" onclick="calculate()">=</button>
-                <button id="subtraction" class="calc-numbers" onclick="appendToDisplay('-')">-</button>
-            </div>
+      <div class="calculator">
+        <div class="future-display">
+          <input type="text" id="prediction" value="Calculator" />
         </div>
+        <input id="display" readonly />
+        <div class="calc-btns" id="calculator-btns">
+          <button id="1" class="calc-numbers" value="1">1</button>
+          <button id="2" class="calc-numbers" value="2">2</button>
+          <button id="3" class="calc-numbers" value="3">3</button>
+          <button id="multiply" class="calc-numbers" value="*">*</button>
+          <button id="4" class="calc-numbers" value="4">4</button>
+          <button id="5" class="calc-numbers" value="5">5</button>
+          <button id="6" class="calc-numbers" value="6">6</button>
+          <button id="division" class="calc-numbers" value="/">/</button>
+          <button id="7" class="calc-numbers" value="7">7</button>
+          <button id="8" class="calc-numbers" value="8">8</button>
+          <button id="9" class="calc-numbers" value="9">9</button>
+          <button id="addition" class="calc-numbers" value="+">+</button>
+          <button id="0" class="calc-numbers" value="0">0</button>
+          <button id="00" class="calc-numbers" value="ac">AC</button>
+          <button id="equal" class="calc-numbers" value="=">=</button>
+          <button id="subtraction" class="calc-numbers" value="-">-</button>
+        </div>
+      </div>
     </div>
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
