@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>World Clock</title>
+  </head>
+  <body>
+    <main>
+      <div class="heading">
+        <h1 class="heading-header">World Clock</h1>
+        <p class="heading-description">
+          Years, Months, Days, Hours, Minutes and Seconds since the beginning of
+          Time
+        </p>
+      </div>
+      <div class="today">
+        <h2>Today: <span id="date"></span></h2>
+        <h2><span id="time">00:00</span></h2>
+      </div>
+      <div class="clock" id="clock">
+        <div class="clock-container">
+          <span class="clock-container-data" id="years">00</span>
+          <span class="clock-container-text">Years</span>
+        </div>
+        <div class="clock-container">
+          <span class="clock-container-data" id="months">00</span>
+          <span class="clock-container-text">Months</span>
+        </div>
+        <div class="clock-container">
+          <span class="clock-container-data" id="days">00</span>
+          <span class="clock-container-text">Days</span>
+        </div>
+        <div class="clock-container">
+          <span class="clock-container-data" id="hours">00</span>
+          <span class="clock-container-text">Hours</span>
+        </div>
+        <div class="clock-container">
+          <span class="clock-container-data" id="minutes">00</span>
+          <span class="clock-container-text">Minutes</span>
+        </div>
+        <div class="clock-container">
+          <span class="clock-container-data" id="seconds">00</span>
+          <span class="clock-container-text">Seconds</span>
+        </div>
+        <div>
+          <span class="clock-container-counter" id="counter">00</span>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
