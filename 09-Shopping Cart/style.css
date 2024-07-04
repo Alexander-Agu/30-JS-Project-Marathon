@@ -1,0 +1,55 @@
+/* >>>>> RESET <<<<< */
+    *,
+    *::before,
+    *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+/*  */
+
+
+/* >>>>> GENERAL STYLES <<<<< */
+    body{
+        font-family: sans-serif;
+    }
+/*  */
+
+
+/* >>>>> HEADER STYLES <<<<< */
+    .navbar{
+        background-color: #212529;
+        color: white;
+        padding: 25px 60px; /* padding: Top&Bottom Left&Right; */
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cart{
+        position: relative;
+        background-color: #fff;
+        color: #212529;
+        padding: 5px;font-size: 30px;
+        border-radius: 4px;
+    }
+
+    .cartAmount{
+        font-size: 16px;
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: -12px;
+        right: -13px;
+        padding: 3px;
+        border-radius: 3px;
+    }
+
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+    }
