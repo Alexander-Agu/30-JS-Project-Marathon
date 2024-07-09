@@ -8,8 +8,7 @@ const noteNum = document.getElementById('note-num');
 const note = document.getElementById('note');
 
 
-// Add button > must append info to noteContainer
-// add only when all the field are filled in
+// Handles the add button
 document.getElementById('js-addBTN').onclick = ()=>{
     console.log(noteNum.value)
     if(noteTitle.value !== '' && noteDate.value !== '' && noteNum.value !== '' && note.value !== ''){
@@ -18,7 +17,7 @@ document.getElementById('js-addBTN').onclick = ()=>{
     }
 };
 
-// Takes in the valuesand append them
+// Takes in the values and append them to display
 function appendValues(title, date, num, notes){
     // Divs
     let addedDiv = document.createElement('div');
@@ -42,7 +41,12 @@ function appendValues(title, date, num, notes){
     button.id = 'js-delete';
     button.textContent = "delete";
 
+
     headingDiv.append(titleH2, dateH2, noteNumH2);
     addedDiv.append(headingDiv, note, button);
     noteContainer.append(addedDiv);
+}
+
+function saveToLocalStorage(string, delet){
+
 }
