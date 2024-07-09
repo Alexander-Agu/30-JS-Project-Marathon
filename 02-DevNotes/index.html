@@ -5,26 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevNotes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <div class="container">
-        <div class="devnotes-container">
-            <div class="details">
+        <div class="note-container">
+            <div class="intro">
                 <h1>Dev Notes</h1>
-                <p>
-                    Dev Notes was specially made for Software Developers
-                </p>
+                <p>A note webapp specially made for developers to document or take notes of their current work</p>
+            </div>
 
-                <div class="add-display">
-                    <button id="add-btn">Add <br> Note</button>
-                    <input type="text" id="add-text">
+            <div class="fill-info">
+                <div class="topic">
+                    <h2>Title:</h2>
+                    <input type="text">
+                </div>
+
+                <div class="date">
+                    <h2>Date:</h2>
+                    <input type="text">
+                </div>
+
+                <div class="note-num">
+                    <h2>Note No.:</h2>
+                    <input type="text">
                 </div>
             </div>
 
-            <div class="note-display">
-                <div class="note-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Deleniti, sunt, aut consequuntur pariatur dolorem quisquam corrupti consectetur similique <br> harum voluptas eveniet eum rerum nihil voluptatum fugiat, officia laboriosam ratione perferendis?</div>
-                <p id="display">
-                </p>
+            <div>
+                <div class="add-note">
+                    <h2>Note:</h2>
+                    <input type="text">
+                    <button id="js-addBTN"><span class="material-symbols-outlined">
+                        add
+                        </span></button>
+                </div>
+
+                <div class="added-notes"></div>
+            </div>
+
+            <div class="added-notes">
+                <div class="notes">
+                    <div class="added-info">
+                        <div class="heading">
+                            <h2>Title</h2>
+                            <h2>Date</h2>
+                            <h2>Note Number 1</h2>
+                        </div>
+    
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt provident pariatur itaque placeat unde doloremque delectus earum repellendus sunt? Iusto, sint. Placeat eaque odit, quae voluptate beatae consequatur obcaecati et.
+                        </p>
+
+                        <button id="js-delete"><span class="material-symbols-outlined">
+                            close
+                            </span></button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
