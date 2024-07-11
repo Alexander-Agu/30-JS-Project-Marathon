@@ -3,20 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mid Leve; Sidebar</title>
+    <title>Mid Level Sidebar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-
-<style>
-    .material-symbols-outlined {
-      font-variation-settings:
-      'FILL' 0,
-      'wght' 600,
-      'GRAD' 0,
-      'opsz' 24
-    }
-    </style>
 
 <body>
     <header class="header">
@@ -27,9 +17,9 @@
         <nav>
             <!-- SIDEBAR -->
             <div class="sidebar">
-                <ul class="">
-                    <li>
-                        <a href="#">
+                <ul>
+                    <li onclick="hideSidebar()">
+                        <a href="#" >
                             <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
                         </a>
                     </li>
@@ -88,24 +78,24 @@
 
             <!-- NAVBAR -->
             <ul class="navbar">
-                <li>
+                <li class="hideNav">
                     <a href="#">Home</a>
                 </li>
-                <li>
+                <li class="hideNav">
                     <a href="#">About</a>
                 </li>
-                <li>
+                <li class="hideNav">
                     <a href="#">Blog</a>
                 </li>
-                <li>
+                <li class="hideNav">
                     <a href="#">Contact</a>
                 </li>
-                <li>
+                <li class="hideNav">
                     <a href="#">Logout</a>
                 </li>
-                <li>
-                    <a href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+                <li onclick="showSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
                     </a>
                 </li>
             </ul>

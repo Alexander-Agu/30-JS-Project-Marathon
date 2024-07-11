@@ -30,10 +30,6 @@
         justify-content: space-around;
         align-items: center;
     }
-
-    nav{
-
-    }
 /* > Navbar */
     .navbar{
 
@@ -59,14 +55,14 @@
         top: 0;
         right: 0;
         z-index: 999;
+        background-color: #f9fade;
 
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: flex-start;
     }
 
     .sidebar ul{
-        background-color: aliceblue;
         height: 60%;
 
         display: flex;
@@ -90,12 +86,11 @@
     }
 
     .sidebar .profile{
-        background-color: aliceblue;
         height: 40%;
         padding: 16px;
 
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-end;
         flex-direction: column;
         gap: 1rem;
@@ -105,5 +100,21 @@
         text-align: center;
         border-radius: 50%;
     }
+    .hideMenu{
+        display: none;
+    }
 
 /* >> RESPONSIVE WEB */
+    @media(max-width: 500px){
+        .hideNav{
+            display: none;
+        }
+
+        .hideMenu{
+            display: contents;
+        }
+
+        .sidebar{
+            width: 100%;
+        }
+    }
