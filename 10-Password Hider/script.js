@@ -3,7 +3,10 @@
 const enterPassword = document.getElementById('js-enterPass');
 const reEnterPassword = document.getElementById('js-reEnterPass');
 
-let hideButton = document.getElementById('js-hide').onclick = ()=>{
+
+let hideButton = document.getElementById('js-hide');
+
+hideButton.addEventListener('click', (e)=>{
     let initialValue = enterPassword.value
     console.log(initialValue)
     if(enterPassword.value){
@@ -13,19 +16,21 @@ let hideButton = document.getElementById('js-hide').onclick = ()=>{
     else if(enterPassword.value !== initialValue){
         enterPassword.value = initialValue;
     }
-};
+})
+
+
 
 
 // Changes Password to hidden Password
 function hidePassword(password){
     let passwordLenth = password.length;
-    let hiddenPassword = [];
+    let hiddenPassword = ['a','l','e','x'];
 
-    for(let i = 0; i <+ passwordLenth; i++){
-        hiddenPassword.push('*');
-    }
-    let joinHiddenPassword = hiddenPassword.join('');
-    
-    return joinHiddenPassword;
+    hiddenPassword.forEach(function(names, index){
+        console.log()
+    });
+
 };
+
+hidePassword("Alexander")
 
