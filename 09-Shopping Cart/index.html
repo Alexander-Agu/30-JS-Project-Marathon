@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
 
-<!-- THIS IS FROM YOUTUBE JUST TO GET A CLEAR UNDERSTANDING ON THE SHOPING CART -->
+  <!-- THIS IS FROM YOUTUBE JUST TO GET A CLEAR UNDERSTANDING ON THE SHOPING CART -->
 
-<body>
+  <body>
     <div class="navbar">
-        <h2> Clothing Store</h2>
-
-        <div class="cart">
-            <span class="material-symbols-outlined">
-                shopping_cart
-                </span>
-            <div class="cartAmount">0</div>
-        </div>
+      <h2>Clothing Store</h2>
+      <div class="cart">
+        <button class="material-symbols-outlined" id="cart-btn">
+          shopping_cart
+        </button>
+        <div class="cartAmount" id="cartAmount">0</div>
+      </div>
     </div>
 
-    <div class="shop" id="shop">
-
-
+    <div class="shop" id="shop"></div>
+    <div class="cart-wrapper" id="cart">
+      <div>
+        <button class="cart-close" id="cart-close">close</button>
+        <h1 class="cart-heading">Cart</h1>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
     </div>
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
