@@ -1,4 +1,3 @@
-
 const sidebar = document.querySelector('.sidebar');
 
 function showSidebar(){
@@ -7,4 +6,3 @@ function showSidebar(){
 function hideSidebar(){
     sidebar.style.display = 'none';
 }
-
