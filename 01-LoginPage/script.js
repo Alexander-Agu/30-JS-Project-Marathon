@@ -22,7 +22,6 @@ function passwordGenerator() {
 
     return password;
 }
-my name is alexander agu mainly because im the bes
 
 //Get the values of the Username, Number, and Password and save in local storage
 let username = "";
