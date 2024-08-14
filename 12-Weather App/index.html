@@ -5,8 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <div class="container">
+        <div class="app-container">
+            <div class="search">
+                <input type="text" id="search">
+
+                <button>
+                    <span class="material-symbols-outlined">
+                        search
+                        </span>
+                </button>
+
+            </div>
+
+            <div class="weather-details">
+                <!-- Displays the location -->
+                <div class="location-img">
+                    <div class="location-details">
+                        <p id="date">May 29, 2024</p>
+    
+                        <h1 id="location-name">London</h1>
+                    </div>
+
+                    <img src="" alt="Weather" width="100">
+
+                    <h2 id="degree">!3C</h2>
+                </div>
+
+                <!-- Displays extra information -->
+                <div class="extra-info">
+                    <div class="highs">
+                        <h2>Highs</h2>
+                        <h3>!4.44C</h3>
+                    </div>
+                    <div class="lows">
+                        <h2>lows</h2>
+                        <h3>!4.44C</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
