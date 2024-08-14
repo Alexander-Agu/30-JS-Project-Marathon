@@ -6,13 +6,9 @@ const cartCloseBtn = document.getElementById("cart-close");
 let cartAmount = document.getElementById("cartAmount");
 let cart = [];
 
-<<<<<<< HEAD
-// Stores the values of the items
-let shopItemsData = [{
-=======
 let shopItemsData = [
   {
->>>>>>> d97044ff54091f9d5672b0b7f10fc027709f8550
+
     id: "myword1",
     name: "Casual Shirt",
     price: 45,
@@ -46,35 +42,9 @@ let shopItemsData = [
   },
 ];
 
-<<<<<<< HEAD
-let generateShop = () => {
-    return (shop.innerHTML = shopItemsData
-      .map((x) => {
-        let { id, name, price, desc, img } = x;
-        let search = basket.find((x) => x.id === id) || [];
-        return `
-        <div id=product-id-${id} class="item">
-            <img width="220" src=${img} alt="">
-            <div class="details">
-                <h3>${name}</h3>
-                <p>${desc}</p>
-                <div class="price-quantity">
-                    <h2>$ ${price} </h2>
-                    <div class="buttons">
-                        <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
-                        <div id=${id} class="quantity">
-                        ${search.item === undefined ? 0 : search.item}
-                    </div>
-                    <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
-                </div>
-            </div>
-          </div>
-        </div>
-      `;
-      })
-      .join(""));
-  };
-=======
+
+
+
 const addItemToCart = (id) => {
   if (cart.length > 0) {
     let existingItem = cart.find((item) => item.id == id);
@@ -95,7 +65,7 @@ const addItemToCart = (id) => {
     }
   }
 };
->>>>>>> d97044ff54091f9d5672b0b7f10fc027709f8550
+
 
 const RemoveItemFromCart = (id) => {
   cart = cart.filter((item) => item.id != id);
