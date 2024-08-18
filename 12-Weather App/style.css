@@ -43,11 +43,13 @@
     }
 /* >>> Search (div) styles */
     .search{
-
-
+        width: 500px;
+        padding: 0 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: white;
+        border-radius: 50px;
     }
 
     .search input{
@@ -55,11 +57,10 @@
         height: 70px;
         padding: 10px;
         font-size: 30px;
-        color: white;
-        background-color: transparent;
+        color: black;
         border: none;
         outline: none;
-        border-bottom: 3px solid white;
+        background-color: transparent;
     }
 
     .search button{
@@ -68,11 +69,13 @@
         background-color: transparent;
         border: none;
         outline: none;
+        color: black;
+        cursor: pointer;
     }
 
     .material-symbols-outlined{
         scale: 2;
-        color: white;
+        color: black;
     }
 /* >>> Weather Details Stlyles */
     .weather-details{
@@ -81,11 +84,51 @@
         height: 50%;
 
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+     }
+    
+    .city{
+      text-align: center;
+    }
+    .city h1{
+      font-size: 50px;
+    }
+
+    .city h2{
+      font-size: 20px;
+    }
+
+    .temperature{
+      margin: 20px 0;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .temperature span{
+      font-family: sans-serif;
+      font-size: 80px;
+      font-weight: 900;
+    }
+    
+    .humidity-pressure{
+      display: flex;
+      font-size: 40px;
+    }
+
+    .humidity-pressure p{
+      font-size: 20px;
+    }
+
+    .humidity-pressure div{
+      padding: 0 20px;
+    }
+
+    .humidity-pressure div:first-child{
+      border-right: 2px solid white;
     }
 /* >>> Location (div) Styles */
     .location-img{
-
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -93,8 +136,6 @@
     }
 
     .location-details{
-
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
