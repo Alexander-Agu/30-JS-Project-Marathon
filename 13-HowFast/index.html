@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="misterH100">
+    <title>How Fast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="modal" id="modal">
+      <p>How fast can you type a single line of code using your favourite programming language,Let's test your speed! </p>
+      <h1>Select your language</h1>
+      <div class="select-lang" id="select-lang"></div>
+    </div>
+    <div class="note">
+      <div class="cancel"><button id="cancel">&larr;</button></div>
+      <p>Start typing to begin!</p>
+    </div>
+    <code class="code-block" id="code-block"></code>
+    <div class="result" id="result">
+      <span id="time"></span>
+      <p id="message"></p>
+      <div class="stats">
+        accuracy:
+       <span id="accuracy"></span>
+      </div>
+      <button id="close">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
