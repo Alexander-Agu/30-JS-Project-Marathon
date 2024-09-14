@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=SUSE:wght@100..800&display=swap');
+
 /* REST */
     *,
     *::after,
@@ -5,4 +9,74 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+/*  */
+
+/* >>>>> GENERAL STYLES <<<<< */
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background: radial-gradient(circle at 50.3% 44.5%, rgb(116, 147, 179) 0%, rgb(62, 83, 104) 100.2%);
+    }
+/*  */
+
+/* >>>>> CONTAINER STYLES <<<<< */
+    .boredContainer{
+        height: 100vh;
+        width: 100%;
+
+        display: grid;
+        place-content: center;
+    }
+/*  */
+
+/* >>>>> BORED APP CONTAINER STYLES <<<<< */
+    .boredApp{
+        background-color: rgba(240, 248, 255, 0.192);
+        backdrop-filter: blur(1);
+        height: 500px;
+        width: 500px;
+        border-radius: 12px;
+        border: 2px solid white;
+    }
+
+    .ask{
+        height: 50%;
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ask h1{
+        font-family: "Inconsolata", monospace;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+    }
+
+    .ask p{
+        font-family: "SUSE", system-ui;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal;
+    }
+
+    .generateBTN{
+        height: 50%;
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .generateBTN button{
+        width: 100px;
+        height: 40px;
     }
